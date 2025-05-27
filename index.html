@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Méta-données essentielles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Méta-données -->
+  <title>{{title}} - {{site_name}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="keywords" content="{{keywords}}">
+  <meta name="author" content="{{author}}">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  
+  <!-- URL canonique -->
+  <link rel="canonical" href="{{canonical_url}}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{page_url}}">
+  <meta property="og:title" content="{{og_title}}">
+  <meta property="og:description" content="{{og_description}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:site_name" content="{{site_name}}">
+  <meta property="og:locale" content="fr_FR">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{page_url}}">
+  <meta name="twitter:title" content="{{twitter_title}}">
+  <meta name="twitter:description" content="{{twitter_description}}">
+  <meta name="twitter:image" content="{{twitter_image}}">
+  <meta name="twitter:creator" content="{{twitter_handle}}">
+  
+  <!-- Favicon et icônes -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- DNS Prefetch pour les performances -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  
+  <!-- Préchargement des ressources critiques -->
+  <link rel="preload" href="./assets/css/styles.css" as="style">
+  <link rel="preload" href="./assets/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+  <!-- JSON-LD Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "{{page_name}}",
+    "description": "{{schema_description}}",
+    "url": "{{page_url}}",
+    "inLanguage": "fr-FR",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "{{site_name}}",
+      "url": "{{site_url}}"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{author_name}}"
+    },
+    "datePublished": "{{publish_date}}",
+    "dateModified": "{{modified_date}}"
+  }
+  </script>
+</head>
+<body>
+  <!-- Header avec navigation structurée -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Navigation principale">
+      <!-- Navigation ici -->
+    </nav>
+  </header>
+  
+  <!-- Contenu principal -->
+  <main role="main"></main>
+  
+  
+  <!-- Footer -->
+  <footer role="contentinfo"></footer>
+  
+  <!-- Scripts en fin de body pour les performances -->
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>
